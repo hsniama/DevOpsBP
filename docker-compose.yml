@@ -4,7 +4,8 @@ services:
   microservicio:
     build: .
     ports:
-      - "8001:8000"
+      - "8000:8000" #puerto primera replica
+      - "8001:8000" #puerto segunda replica
     deploy:
       replicas: 2
       restart_policy:
