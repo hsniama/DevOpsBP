@@ -9,10 +9,3 @@ services:
       replicas: 2
       restart_policy:
         condition: on-failure
-
-  nginx:
-    image: nginx:latest
-    ports:
-      - "8080:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
