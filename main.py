@@ -15,7 +15,7 @@ class Message(BaseModel):
 @app.post("/DevOps")
 async def devops(message: Message, x_parse_rest_api_key: str = Header(...)):
     if x_parse_rest_api_key != API_KEY:
-        raise HTTPException(status_code=401, detail="No Autorizado")
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
     return {"message": f"Hello {message.to} your message will be send"}
 
