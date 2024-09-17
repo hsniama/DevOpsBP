@@ -33,7 +33,7 @@ docker-compose up --scale microservicio=2
 ![2](https://github.com/user-attachments/assets/c8479bb1-b1ef-49a6-a15d-13812dbc9b43)
 
 ### 3. Obtener una IP pública con Ngrok
-Abrimos Ngrok (descargable como aplicación portable) y ejecutamos el siguiente comando para obtener una IP pública. Este comando reemplaza el uso de localhost:8000 por una IP accesible desde cualquier lugar del mundo:
+Abrimos Ngrok (descargable como aplicación portable, es una consola) y ejecutamos el siguiente comando para obtener una IP pública. Este comando reemplaza el uso de localhost:8000 por una IP accesible desde cualquier lugar del mundo:
 
 ```bash
 ngrok http 8000
@@ -42,7 +42,7 @@ Esta es nuestra IP pública aleatoria:
 ```bash
 https://bfd1-190-110-43-162.ngrok-free.app
 ```
-Nota: Al usar Ngrok en su plan gratuita, cada que iniciemos nuestra aplicación, esta IP cambia. Para este presentación, se deja neustro servicio desplegado por el día 17 de Septiembre de 2024. En caso de pruebas en días psoteriores, esta IP se renovará y actualizará.
+Nota: Al usar Ngrok en su plan gratuito, cada que iniciemos nuestra aplicación, esta IP cambia. Para este presentación, se deja nuestro servicio desplegado por todo el día 17 de Septiembre de 2024. En caso de pruebas en días posteriores, esta IP se renovará y se actualizará en este repositorio.
 
 ![3](https://github.com/user-attachments/assets/81723369-be9a-4096-b539-06820195e356)
 ![4](https://github.com/user-attachments/assets/57a51a58-1e86-4119-a43e-9ff6f975de4b)
