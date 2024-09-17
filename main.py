@@ -21,12 +21,12 @@ async def devops(message: Message, x_parse_rest_api_key: str = Header(...)):
 
 @app.get("/{path}")
 async def handle_invalid_method():
-    return "ERROR metodo diferente a PUT"
+    return "ERROR metodo diferente a POST"
 
 @app.put("/{path}")
 async def handle_invalid_method():
-    return "ERROR metodo diferente a PUT"
+    return "ERROR metodo diferente a POST"
 
 @app.delete("/{path}")
 async def handle_invalid_method():
-    return "ERROR metodo diferente a PUT"
+    return "ERROR metodo diferente a POST"

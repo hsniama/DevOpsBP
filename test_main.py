@@ -24,4 +24,4 @@ def test_post_devops_with_invalid_apikey():
 def test_invalid_methods():
     response = client.get("/DevOps")
     assert response.status_code == 200
-    assert response.text == '"ERROR metodo diferente a PUT"'
+    assert response.text == '"ERROR metodo diferente a POST"'
