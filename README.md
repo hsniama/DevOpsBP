@@ -38,9 +38,11 @@ Abrimos Ngrok (descargable como aplicación portable) y ejecutamos el siguiente 
 ```bash
 ngrok http 8000
 ```
+Esta es nuestra IP pública aleatoria:
 ```bash
 https://bfd1-190-110-43-162.ngrok-free.app
 ```
+Nota: Al usar Ngrok en su plan gratuita, cada que iniciemos nuestra aplicación, esta IP cambia. Para este presentación, se deja neustro servicio desplegado por el día 17 de Septiembre de 2024. En caso de pruebas en días psoteriores, esta IP se renovará y actualizará.
 
 ![3](https://github.com/user-attachments/assets/81723369-be9a-4096-b539-06820195e356)
 ![4](https://github.com/user-attachments/assets/57a51a58-1e86-4119-a43e-9ff6f975de4b)
