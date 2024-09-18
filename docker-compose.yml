@@ -1,12 +1,13 @@
-version: '3'
+version: '3.8'
 
 services:
   microservicio:
     build: .
     ports:
-      - "8000:8000"
-      - "8001:8000"
+      - "8000:8000"  # Exponemos solo una vez el puerto
     deploy:
-      replicas: 2
+      mode: replicated
+      replicas: 2  # Docker Swarm balanceará automáticamente
       restart_policy:
         condition: on-failure
+
