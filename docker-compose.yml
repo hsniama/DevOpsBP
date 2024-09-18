@@ -10,6 +10,5 @@ services:
       replicas: 2
       restart_policy:
         condition: on-failure
-    expose:
-     - "8000"  # Exponemos el puerto 8000 para permitir la comunicación interna entre contenedores
+
 

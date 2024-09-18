@@ -4,11 +4,11 @@ import jwt
 
 client = TestClient(app)
 
-# Configura tu clave secreta JWT para pruebas
-JWT_SECRET = "1720844446"  # Debe coincidir con la clave secreta en main.py
+# Configuramos el JWT para pruebas
+JWT_SECRET = "1720844446"  # Debe siempre coincidir con la clave secreta en main.py
 
 def create_jwt():
-    # Crea un JWT válido para pruebas
+    # Creamos un JWT válido para pruebas
     payload = {"some": "data"}
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
     return token

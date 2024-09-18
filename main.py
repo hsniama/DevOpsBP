@@ -6,7 +6,7 @@ import jwt
 app = FastAPI()
 
 API_KEY = "2f5ae96c-b558-4c7b-a590-a501ae1c3f6c"
-JWT_SECRET = "1720844446"  # Reemplaza con tu clave secreta JWT
+JWT_SECRET = "1720844446"
 
 class Message(BaseModel):
     message: str
@@ -26,11 +26,11 @@ def verify_jwt(token: str):
 
 @app.post("/DevOps")
 async def devops(message: Message, x_parse_rest_api_key: str = Header(...), x_jwt_kwy: Optional[str] = Header(None)):
-    # Verifica la clave API
+    # Verificamos la clave API
     if x_parse_rest_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Unauthorized")
     
-    # Verifica el JWT
+    # Verificamos el JWT
     if x_jwt_kwy is None:
         raise HTTPException(status_code=401, detail="JWT required")
     
