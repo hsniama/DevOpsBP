@@ -60,7 +60,7 @@ jobs:
     - name: Run tests
       run: |
         source venv/bin/activate
-        pytest app/tests
+        pytest
 
   deploy:
     runs-on: ubuntu-latest
