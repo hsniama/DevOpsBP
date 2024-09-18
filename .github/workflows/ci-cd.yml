@@ -46,19 +46,21 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install Docker Compose
-      run: |
-        sudo apt-get update
-        sudo apt-get install docker-compose -y
-
     - name: Install dependencies
       run: |
         python -m venv venv
         source venv/bin/activate
         pip install -r requirements.txt
 
+    - name: Install pytest
+      run: |
+        source venv/bin/activate
+        pip install pytest  # Instala pytest si no está en requirements.txt
+
     - name: Run tests
-      run: pytest app/tests
+      run: |
+        source venv/bin/activate
+        pytest app/tests
 
   deploy:
     runs-on: ubuntu-latest
@@ -77,3 +79,4 @@ jobs:
     - name: Build and deploy
       run: |
         docker-compose up -d --scale microservicio=2
+

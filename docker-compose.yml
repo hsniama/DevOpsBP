@@ -4,7 +4,7 @@ services:
   microservicio:
     build: .
     ports:
-      - "8000"  # Remueve el mapeo de "8000:8000" y deja solo el puerto del contenedor
+      - "8000"  # Remuevo el mapeo de "8000:8000" y deja solo el puerto del contenedor
     deploy:
       mode: replicated
       replicas: 2
