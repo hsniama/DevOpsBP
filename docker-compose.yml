@@ -4,10 +4,11 @@ services:
   microservicio:
     build: .
     ports:
-      - "8000:8000"  # Exponemos solo una vez el puerto
+      - "8000"  # Remueve el mapeo de "8000:8000" y deja solo el puerto del contenedor
     deploy:
       mode: replicated
-      replicas: 2  # Docker Swarm balanceará automáticamente
+      replicas: 2
       restart_policy:
         condition: on-failure
+
 
