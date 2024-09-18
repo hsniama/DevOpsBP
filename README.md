@@ -77,9 +77,6 @@ https://db3b-190-110-43-162.ngrok-free.app
 ```
 Nota: Al usar Ngrok en su plan gratuito, cada que iniciemos nuestra aplicación, esta IP cambia. Para este presentación, se deja nuestro servicio desplegado por todo el día 18 de Septiembre de 2024. En caso de pruebas en días posteriores, esta IP se renovará y se actualizará en este repositorio.
 
-![3](https://github.com/user-attachments/assets/81723369-be9a-4096-b539-06820195e356)
-![4](https://github.com/user-attachments/assets/57a51a58-1e86-4119-a43e-9ff6f975de4b)
-
 
 ### 4. Endpoint del Microservicio
 Nuestro endpoint final será:
