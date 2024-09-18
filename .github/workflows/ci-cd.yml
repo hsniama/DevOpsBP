@@ -19,6 +19,11 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install Docker Compose
+      run: |
+        sudo apt-get update
+        sudo apt-get install docker-compose -y
+
     - name: Install dependencies
       run: |
         python -m venv venv
@@ -41,6 +46,11 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install Docker Compose
+      run: |
+        sudo apt-get update
+        sudo apt-get install docker-compose -y
+
     - name: Install dependencies
       run: |
         python -m venv venv
@@ -58,6 +68,11 @@ jobs:
     steps:
     - name: Check out the code
       uses: actions/checkout@v3
+
+    - name: Install Docker Compose
+      run: |
+        sudo apt-get update
+        sudo apt-get install docker-compose -y
 
     - name: Build and deploy
       run: |
